@@ -54,6 +54,7 @@ class PetTypeFormatterTests {
 	void testPrint() {
 		PetType petType = new PetType();
 		petType.setName("Hamster");
+		System.out.println("Setting Name: "+petType.getName());
 		String petTypeName = this.petTypeFormatter.print(petType, Locale.ENGLISH);
 		assertThat(petTypeName).isEqualTo("Hamster");
 	}
